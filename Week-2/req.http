@@ -1,0 +1,96 @@
+###Read all Users
+GET http://localhost:3000/user-api/users
+
+###Read a user by id
+GET http://localhost:3000/user-api/users/18
+
+### Read a user by name
+GET  http://localhost:3000/user-api/users/Anitha
+
+###Create a new User
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":18,
+    "name":"Anitha",
+    "age":20
+}
+
+### Update the users
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":18,
+    "name":"Anitha Das",
+    "age":19
+}
+
+
+###Delete the  user by ID 
+DELETE http://localhost:3000/user-api/users/18
+
+
+
+
+
+
+// calling for the product APIs
+
+###READ all Products
+GET  http://localhost:3000/product-api/products
+
+###Read Products by brand
+GET http://localhost:3000/product-api/products/trends
+
+
+
+
+### Creating the product
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":101,
+    "name":"kurti",
+    "brand":"trends",
+    "price":3000
+}
+
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":102,
+    "name":"jeans",
+    "brand":"trends",
+    "price":4000
+}
+
+### 
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":103,
+    "name":"dupatta",
+    "brand":"zudio",
+    "price":1000
+}
+
+
+### To Update the product
+PUT http://localhost:3000/product-api/products
+Content-Type:application/json
+
+{
+    "pid":102,
+    "name":"Skirt",
+    "brand":"zudio",
+    "price":1000
+}
+
+### delete a product by id
+DELETE http://localhost:3000/product-api/products/101
