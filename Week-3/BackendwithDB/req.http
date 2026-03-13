@@ -1,0 +1,98 @@
+
+###Read all Users(request to protected type)
+GET http://localhost:4000/user-api/users
+Cookie:token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaXRoYUBnbWFpbC5jb20iLCJpYXQiOjE3NzMyOTA1NjIsImV4cCI6MTc3MzM3Njk2Mn0.vU9Jmo10V1sTCVHswOkqxgWZ7ND46R1cOeEnSJOM-_c; Path=/; HttpOnly; SameSite=Lax
+
+###Read by ID
+GET http://localhost:4000/user-api/user
+Cookie:token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaXRoYUBnbWFpbC5jb20iLCJpYXQiOjE3NzMyOTA1NjIsImV4cCI6MTc3MzM3Njk2Mn0.vU9Jmo10V1sTCVHswOkqxgWZ7ND46R1cOeEnSJOM-_c; Path=/; HttpOnly; SameSite=Lax
+
+###create new user for database
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Anitha",
+    "password":"Anitha",
+    "email":"anitha@gmail.com",
+    "age":20
+}
+
+
+
+###Create new User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Akshaya",
+    "password":"Akshaya",
+    "email":"akshu@gmail.com",
+    "age":20
+}
+
+### Update the users
+PUT http://localhost:4000/user-api/users/69ae0a9d36d88529c64f0b8a
+Cookie:token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaXRoYUBnbWFpbC5jb20iLCJpYXQiOjE3NzI4NzY4OTQsImV4cCI6MTc3Mjg4MDQ5NH0.z583L9GK5hsod6DvQW-DJtUm3AA8DatES03SFMs_98U; Path=/; HttpOnly; SameSite=Lax
+Content-Type: application/json
+
+{
+    "username":"Anitha",
+    "password":"Anitha",
+    "email":"anitha@gmail.com",
+    "age":19
+}
+
+
+###user authentication
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"anitha@gmail.com",
+    "password":"Anitha"
+}
+
+###Delete the  user by ID 
+DELETE http://localhost:4000/user-api/users/69ae0a9d36d88529c64f0b8a
+Cookie:token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuaXRoYUBnbWFpbC5jb20iLCJpYXQiOjE3NzMwMTM3NzIsImV4cCI6MTc3MzAxNzM3Mn0.mtqcqj8wp-HA3EfkcobIVwL6G_WmygQshRuNtKiYVZ0; Path=/; HttpOnly; SameSite=Lax
+
+
+###Add product to the user Cart
+PUT http://localhost:4000/user-api/cart/product-id/69b2566135bd40c363826d70
+
+###PRODUCT
+
+###read all products
+GET http://localhost:4000/product-api/products
+
+
+###Read the product  by ID
+GET http://localhost:4000/product-api/products/101
+
+###Create New Product
+POST  http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "productName":"Book",
+    "price": 25000,
+    "brand":"Evocative"
+}
+###update the product
+PUT  http://localhost:4000/product-api/products/101
+Content-Type: application/json
+
+{
+    "productId":101,
+    "productName":"Dress",
+    "price": 25000,
+    "brand":"Evocative"
+}
+
+###Delete a product by ID
+DELETE  http://localhost:4000/product-api/products/101
+
+
+
