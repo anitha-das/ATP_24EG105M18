@@ -1,0 +1,18 @@
+import { NavLink } from "react-router";
+
+function Header() {
+  return (
+    <nav className="flex justify-end text-2xl p-7 bg-gray-500 text-black gap-6">
+      <NavLink to="" className={({ isActive }) => (isActive ? "text-white" : "")}>
+        Home
+      </NavLink>
+      <NavLink to="create-emp" className={({ isActive }) => (isActive ? "text-white" : "")}>
+        CreateEmp
+      </NavLink>
+      <NavLink to="list" className={({ isActive }) => (isActive ? "text-white" : "")}>
+        List Of Employees </NavLink>
+    </nav>
+  );
+}
+
+export default Header;
