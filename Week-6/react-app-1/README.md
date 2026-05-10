@@ -1,16 +1,101 @@
-# React + Vite
+# React Product Card Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application created for practicing React components, props, and dynamic rendering.
 
-Currently, two official plugins are available:
+The application displays multiple product cards using reusable React components and product data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Learning Objectives
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Through this project, the following React concepts are practiced:
 
-## Expanding the ESLint configuration
+* Creating Functional Components
+* Using Props
+* JSX Syntax
+* Rendering Lists using `map()`
+* Component Reusability
+* Dynamic Data Rendering
+* Responsive Grid Layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+
+
+# Application Overview
+
+The application displays a collection of product cards.
+
+Each product card contains:
+
+* Product Title
+* Product Category
+* Product Price
+* Product Rating
+
+The products are displayed dynamically using a reusable `Product` component.
+
+---
+
+# Components Used
+
+## App Component
+
+The `App.jsx` file:
+
+* Stores product data inside an array
+* Uses `map()` to render product cards
+* Passes product data using props
+* Displays products using grid layout
+
+---
+
+## Product Component
+
+The `Product.jsx` component:
+
+* Receives product data using props
+* Displays product details
+* Uses Tailwind CSS for styling
+
+---
+
+# React Concepts Practiced
+
+## Functional Components
+
+Function components are used to build reusable UI sections.
+
+---
+
+## Props
+
+Props are used to send product data from parent component to child component.
+
+---
+
+## Dynamic Rendering
+
+The `map()` method is used to display multiple product cards dynamically.
+
+---
+
+## Responsive Layout
+
+Grid layout is used to create responsive product sections.
+
+---
+
+# Tailwind CSS Usage
+
+Tailwind CSS utility classes are used for styling the application.
+
+
+---
+
+* Creating reusable React components
+* Passing data using props
+* Rendering lists dynamically
+* Building responsive layouts
+* Organizing React applications
+* Styling components using Tailwind CSS
