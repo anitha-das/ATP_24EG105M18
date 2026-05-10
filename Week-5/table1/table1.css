@@ -14,3 +14,12 @@ table{
     max-width:50%;
     margin:auto;
 }
+/* Remove borders for the 3 "1item / 123" rows */
+/* Remove only horizontal borders for the 3 "1item / 123" rows */
+tbody tr:nth-child(2) td,
+tbody tr:nth-child(3) td,
+tbody tr:nth-child(4) td {
+    border-top: none;
+    border-bottom: none;
+}
+
