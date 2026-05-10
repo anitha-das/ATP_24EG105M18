@@ -1,16 +1,115 @@
-# React + Vite
+# React Counter Application using Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React counter application created for practicing React Context API and shared state management.
 
-Currently, two official plugins are available:
+The application contains multiple counter components that access and update the same counter value using Context API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Learning Objectives
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Through this project, the following React concepts are practiced:
 
-## Expanding the ESLint configuration
+* Creating Functional Components
+* Using React Context API
+* Using `useContext` Hook
+* Managing Shared State
+* Event Handling in React
+* Component Reusability
+* State Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# Project Structure
+
+The project contains:
+
+* `App.jsx`
+* `contexts/ContextProvider.jsx`
+* `components/EditCounter1.jsx`
+* `components/EditCounter2.jsx`
+* `components/EditCounter3.jsx`
+* `components/EditCounter4.jsx`
+
+---
+
+# Application Overview
+
+The application displays:
+
+* Shared Counter Value
+* Increment Button
+* Decrement Button
+* Multiple Counter Components
+
+All components use the same counter state from Context API.
+
+---
+
+# Components Used
+
+## ContextProvider
+
+The `ContextProvider` component:
+
+* Creates the context object
+* Stores the counter state
+* Provides increment and decrement functions
+* Shares data with all child components
+
+---
+
+## EditCounter Components
+
+The application contains:
+
+* `EditCounter1`
+* `EditCounter2`
+* `EditCounter3`
+* `EditCounter4`
+
+Each component:
+
+* Displays the counter value
+* Increases the counter
+* Decreases the counter
+* Accesses shared data using `useContext`
+
+---
+
+# React Concepts Practiced
+
+## Context API
+
+React Context API is used to share state between multiple components without prop drilling.
+
+---
+
+## useContext Hook
+
+The `useContext` hook is used to access shared counter data from the context provider.
+
+---
+
+## Shared State Management
+
+All components share and update the same counter value.
+
+---
+
+## Event Handling
+
+Buttons are used to increment and decrement the counter value.
+
+---
+
+Tailwind CSS utility classes are used for styling components.
+
+---
+
+* Creating React Context API
+* Managing shared state
+* Using `useContext`
+* Creating reusable components
+* Handling events in React
+* Styling components using Tailwind CSS

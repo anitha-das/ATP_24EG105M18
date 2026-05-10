@@ -1,16 +1,134 @@
-# React + Vite
+# MINI MERN APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple Mini MERN application created for practicing full stack development concepts.
 
-Currently, two official plugins are available:
+The application allows users to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Create Employees
+* View Employee Details
+* Edit Employee Information
+* Delete Employees
+* Navigate between pages using React Router
 
-## React Compiler
+The project demonstrates the connection between frontend and backend using APIs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project contains:
+
+* `Backend`
+* `Frontend`
+* `req.http`
+
+---
+
+# Backend Overview
+
+The backend handles employee data management.
+
+It includes:
+
+* Creating employee records
+* Reading employee data
+* Updating employee details
+* Deleting employee records
+
+Employee data is stored in MongoDB using Mongoose models.
+
+---
+
+# Frontend Overview
+
+The frontend contains multiple React components for managing employees.
+
+The application includes:
+
+* Home Page
+* Create Employee Page
+* Employee List Page
+* Employee Details Page
+* Edit Employee Page
+
+---
+
+# Features
+
+## Employee Management
+
+Users can:
+
+* Add new employees
+* View all employees
+* Edit employee details
+* Delete employees
+
+---
+
+## Routing
+
+React Router is used for page navigation between different components.
+
+---
+
+## Shared State
+
+Context API is used for sharing counter values between components.
+
+---
+
+## Zustand Store
+
+A Zustand store is used for managing additional counter state and user data.
+
+---
+
+# Components Included
+
+The frontend contains components such as:
+
+* Header
+* Home
+* CreateEmp
+* ListOfEmps
+* Employee
+* EditEmployee
+* RootLayout
+* Test
+
+---
+
+# API Functionality
+
+The backend APIs handle:
+
+* POST Request → Create Employee
+* GET Request → Fetch Employees
+* PUT Request → Update Employee
+* DELETE Request → Delete Employee
+
+---
+
+# Learning Objectives
+
+Through this project, the following concepts are practiced:
+
+* Full Stack Application Flow
+* REST API Creation
+* React Routing
+* CRUD Operations
+* Context API
+* Zustand State Management
+* Form Handling
+* Database Operations
+* Backend and Frontend Integration
+
+---
+
+* Creating REST APIs
+* Connecting React with Backend
+* Managing Application State
+* Working with MongoDB
+* Building CRUD Applications
+* Organizing Full Stack Projects
