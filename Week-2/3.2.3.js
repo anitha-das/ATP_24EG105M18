@@ -43,6 +43,7 @@ let r2=employees.map((emp)=>
   let r4=employees.find((emp)=>emp.salary=30000)
   console.log(r4);
   //find index of employee "Neha"
+
   let r5=employees.findIndex((emp)=>emp.name=="Neha");
   console.log(r5);
     

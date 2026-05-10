@@ -43,6 +43,6 @@ console.log("Average:",sum/movies.length);
 //finding the movie with joker
 let r4=movies.find((movie)=>{ return movie.title="Joker"});
 console.log(r4);
-//finding the index with movie title as Avengers
+//finding the index with movie title as Avengers 
 let r5=movies.findIndex((movie)=>movie.title=="Avengers");
 console.log(r5);

@@ -24,21 +24,22 @@
             iii. Verify original object remains unchanged */
 const order = {
   orderId: "ORD1001",
- customer: {
-  name: "Anita",
- address: {
-city: "Hyderabad",
-pincode: 500085
- }
+  customer: {
+    name: "Anita",
+    address: {
+      city: "Hyderabad",
+      pincode: 500085
+    }
   },
   items: [
- { product: "Laptop", price: 70000 }
- ]
+    { product: "Laptop", price: 70000 }
+  ]
 };
 //copying the original object
 let copy=structuredClone(order);
-//changing  city in copied object
-copy.customer.city="Chennai";
+//change city in copied object (inside address)
+copy.customer.address.city="Chennai";
+//change price in copied object
 copy.items[0].price=65000;
-console.log(copy);
-console.log(order)
+console.log(copy); //updated copy
+console.log(order); //original object remains same

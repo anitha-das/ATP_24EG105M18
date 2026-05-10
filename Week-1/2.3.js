@@ -1,3 +1,4 @@
+//program to update the marks of employee named sneha
 const employees = [
   {
     eno: 101,
@@ -27,5 +28,7 @@ const employees = [
 ];
 //change marks of sneha from  95 to 75
 //employees[2].marks[2]=75;
+//using splice method to delete one mark and add the the marks 75 at 2nd index
 employees[2].marks.splice(2,1,75);
+//print the employees
 console.log(employees);

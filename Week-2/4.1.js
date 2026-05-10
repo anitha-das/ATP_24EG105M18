@@ -33,69 +33,81 @@ Requirements:
       iv. Count how many books are "long books" (more than 300 pages)
       v. List all available books */
 
-      class Book
-      {
-        title;
-      author;
-      pages;
-      isAvailable=true;
-      constructor(title,author,pages)
-      {
-        this.title=title;
-        this.author=author;
-        this.pages=pages;
-      }
-        borrow(isAvailable)
-        {
-          this.isAvailable=false;
-        }
-        returnBook(isAvailable)
-        {
-            this.isAvailable=true;
-        }
-        getInfo()
-        {
-            return "The Book "+this.title+" by "+this.author+" has ("+this.pages+") pages";
-        }
-        isLongBook()
-        {
-            if(this.pages>300)
-                return true;
-            else
-                return false;
-        }
-      }
-      b1=new Book("DeepWork","Napoleon",350)
-      b2=new Book("Work","mike",250)
-      b3=new Book("Mindset","Carl",320)
-      b4=new Book("HereThere","Sudha",450)
-      b5=new Book("Power","Robert",400)
-      console.log(b1.getInfo());
-      console.log(b2.getInfo());
-      console.log(b3.getInfo());
-      console.log(b4.getInfo());
-      console.log(b5.getInfo());
-      b1.borrow()
-      b2.borrow();
-      console.log(b1.isAvailable);
-      console.log(b2.isAvailable);
-      b1.returnBook()
-      console.log(b1.isAvailable);
-      let count=0;
-      if(b1.isLongBook())
-        count+=1;
-    if(b2.isLongBook())
-        count+=1;
-    if(b3.isLongBook())
-        count+=1;
-    if(b4.isLongBook())
-        count+=1;
-    if(b5.isLongBook())
-        count+=1;
-    console.log(`No.of Long books:${count}`);
-    if(b1.isAvailable)
-    {
-        b1.getInfo();
-    }
+     class Book
+{
+  title;
+  author;
+  pages;
+  isAvailable=true; //book is available by default
+  //constructor to initialize book details
+  constructor(title,author,pages)
+  {
+    this.title=title;
+    this.author=author;
+    this.pages=pages;
+  }
+  //mark book as borrowed
+  borrow(isAvailable)
+  {
+    this.isAvailable=false;
+  }
+  //mark book as returned
+  returnBook(isAvailable)
+  {
+    this.isAvailable=true;
+  }
+  //return book information
+  getInfo()
+  {
+    return "The Book "+this.title+" by "+this.author+" has ("+this.pages+") pages";
+  }
+  //check if book has more than 300 pages
+  isLongBook()
+  {
+    if(this.pages>300)
+    return true;
+    else
+    return false;
+  }
+}
+//creating book objects
+b1=new Book("DeepWork","Napoleon",350)
+b2=new Book("Work","mike",250)
+b3=new Book("Mindset","Carl",320)
+b4=new Book("HereThere","Sudha",450)
+b5=new Book("Power","Robert",400)
+//print book details
+console.log(b1.getInfo());
+console.log(b2.getInfo());
+console.log(b3.getInfo());
+console.log(b4.getInfo());
+console.log(b5.getInfo());
+//borrow books
+b1.borrow()
+b2.borrow();
+//check availability
+console.log(b1.isAvailable);
+console.log(b2.isAvailable);
+//return book
+b1.returnBook()
+console.log(b1.isAvailable);
+//count number of long books
+let count=0;
+if(b1.isLongBook())
+  count+=1;
+if(b2.isLongBook())
+  count+=1;
+if(b3.isLongBook())
+  count+=1;
+if(b4.isLongBook())
+  count+=1;
+if(b5.isLongBook())
+  count+=1;
 
+console.log(`No.of Long books:${count}`);
+//check if book is available
+if(b1.isAvailable)
+{
+  b1.getInfo();
+}
     

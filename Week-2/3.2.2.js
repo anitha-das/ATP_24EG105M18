@@ -46,7 +46,7 @@ let r2=students.map((stdnt)=>{
   return stdnt;
 })
 console.log(r2);
-//to calculate avg
+//to calculate average
 let sum= students.reduce((acc,stdnt)=>acc+stdnt.marks,0);
 let avg=sum/students.length;
 console.log("Average:",avg);

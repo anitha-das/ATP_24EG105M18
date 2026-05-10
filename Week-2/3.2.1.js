@@ -23,13 +23,18 @@ Tasks:
   { id: 103, name: "Keyboard", price: 1500, quantity: 1, inStock: false },
   { id: 104, name: "Monitor", price: 12000, quantity: 1, inStock: true }
 ];
+//filter products that are in stock
 let r1=cart.filter((product=>product.inStock==true));
 console.log(r1);
+//get name and price of each product
 let r2=cart.map((product)=>[product.name,product.price]);
 console.log(r2);
+//calculate total price of all products
 let r3=cart.reduce(((acc,product)=>acc+product.price),0);
 console.log(r3);
+//find product with name Mouse
 let r4=cart.find((product)=>product.name=="Mouse");
 console.log(r4);
+//find index of product Keyboard
 let r5=cart.findIndex((product)=>product.name=="Keyboard")
 console.log(r5);

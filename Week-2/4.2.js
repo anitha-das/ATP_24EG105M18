@@ -21,8 +21,9 @@
                               ["apple", "banana", "orange"]
                         
                         👉 Original array should NOT change.*/
- let fruits = ["apple", "banana"];
- let moreFruits=[...fruits,"orange"];
- console.log(fruits);
- console.log(moreFruits);
+ let fruits = ["apple", "banana"]; //original array
+//use spread operator to copy and add new fruit
+let moreFruits=[...fruits,"orange"];
+console.log(fruits); //prints original array
+console.log(moreFruits); //prints new array with orange
  

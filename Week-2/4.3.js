@@ -29,12 +29,13 @@
                         👉 Original object should remain unchanged. */
  let user = {
  name: "Ravi",
-city: "Hyderabad"
+ city: "Hyderabad"
 };
-//creating a new Object
+//creating a new object
 let updateUser={};
+//use spread to copy user and add age
 updateUser={...user,age:25};
-console.log(user);
-console.log(updateUser)
+console.log(user); //original object
+console.log(updateUser); //updated object with age
 
  

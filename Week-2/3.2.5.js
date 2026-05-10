@@ -37,7 +37,7 @@ console.log("Total account balance:",r3);
 //
 let r4=transactions.find((trans)=>trans.type="debit");
 console.log(r4);
-//find index of transaction with amount 10000
+//find index of transaction with amount 10000.
 let r5=transactions.findIndex((trans)=> trans.amount==10000);
 console.log("Index:",r5);
 

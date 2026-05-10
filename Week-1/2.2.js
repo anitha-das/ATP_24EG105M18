@@ -1,3 +1,5 @@
+
+//program to remove an employee name kiran form arry of objects
 const employees = [
   {
     eno: 101,
@@ -25,6 +27,7 @@ const employees = [
     marks: [90, 85, 87],
   },
 ];
-//Removing kiran
+//Removing kiran using splice
 employees.splice(3,1);
+//print employees
 console.log(employees);

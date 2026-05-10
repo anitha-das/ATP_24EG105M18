@@ -14,14 +14,19 @@ Tasks:
 
     4. find() the course "react"
     5. findIndex() of "node" */
-    let courses = ["javascript", "react", "node", "mongodb", "express"];
-    let r1=courses.filter((course=> course.length>5))
-    console.log(r1);
-    let r2=courses.map(course=>course.toUpperCase());
-    console.log(r2);
-    let r3=courses.reduce((acc,course)=>(acc+" | "+course).toUpperCase());
-    console.log(r3);
-    let r4=courses.find(course=>course=="react")
-    console.log(r4);
-    let r5=courses.findIndex(course=>course=="node");
-    console.log(r5);
+ let courses = ["javascript", "react", "node", "mongodb", "express"];
+// filter courses with length greater than 5
+let r1 = courses.filter(course => course.length > 5);
+console.log(r1);
+// convert all course names to uppercase
+let r2 = courses.map(course => course.toUpperCase());
+console.log(r2);
+// combine all courses into one string with " | " and make uppercase
+let r3 = courses.reduce((acc, course) => (acc + " | " + course).toUpperCase());
+console.log(r3);
+// find the course "react"
+let r4 = courses.find(course => course == "react");
+console.log(r4);
+// find index of "node"
+let r5 = courses.findIndex(course => course == "node");
+console.log(r5);
